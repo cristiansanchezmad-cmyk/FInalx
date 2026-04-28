@@ -5,10 +5,13 @@ import lombok.Getter;
 import lombok.ToString;
 import java.time.LocalDate;
 
-@Getter
-@AllArgsConstructor
-@ToString
 public class Estudiante {
+    public Estudiante(Integer nia, String nombre, LocalDate fecha_nacimiento) {
+        this.nia = nia;
+        this.nombre = nombre;
+        this.fecha_nacimiento = fecha_nacimiento;
+    }
+
     private Integer nia;
     private String nombre;
     private LocalDate fecha_nacimiento;
