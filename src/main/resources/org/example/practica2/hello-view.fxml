@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+
+   <TableView fx:id="estudiantesTableView" prefHeight="200.0" prefWidth="303.0">
+     <columns>
+       <TableColumn fx:id="niaTextColumn" prefWidth="75.0" text="NIA" />
+       <TableColumn fx:id="nombreTextColumn" prefWidth="125.0" text="NOMBRE" />
+         <TableColumn fx:id="fechaTextColumn" prefWidth="102.0" text="Fecha" />
+     </columns>
+   </TableView>
+   <HBox alignment="TOP_CENTER" prefHeight="25.0" prefWidth="126.0">
+      <children>
+         <Button fx:id="editarButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Editar" textAlignment="CENTER" />
+         <Button fx:id="eliminarButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Eliminar" textAlignment="RIGHT" />
+      </children>
+   </HBox>
+   <Label fx:id="mensajeOKLabel" prefHeight="17.0" prefWidth="170.0" />
+   <TextField fx:id="niaTextFiel" />
+   <TextField fx:id="nombreTextField" />
+   <DatePicker fx:id="fechaNacimientoDatePicker" />
+   <HBox alignment="TOP_CENTER" prefHeight="25.0" prefWidth="219.0">
+      <children>
+         <Button fx:id="insertarButton" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Insertar" textAlignment="CENTER" />
+         <Button fx:id="guardarButton" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Guardar" textAlignment="CENTER" />
+      </children>
+   </HBox>
+</VBox>
