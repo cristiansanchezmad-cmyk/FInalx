@@ -1,0 +1,10 @@
+{
+  "nombre": "España",
+  "continente": "Europa",
+  "habitantes": 6000000,
+  "idiomas": [
+    "Español",
+    "Marooqui",
+    "Inglés"
+  ]
+}
