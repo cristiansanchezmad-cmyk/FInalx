@@ -24,7 +24,7 @@ class EvaluacionFinalTest {
         EvaluacionFinal ev = new EvaluacionFinal();
         //voy a porbar suspenso
         String valoresperado = "Suspenso";
-        String valorfinal = ev.obtenerResultado(3);
+        String valorfinal = ev.obtenerResultado(4.9);
         assertEquals(valoresperado,valorfinal);
 
 
@@ -34,7 +34,7 @@ class EvaluacionFinalTest {
         EvaluacionFinal ev = new EvaluacionFinal();
         //voy a porbar suspenso
         String valoresperado = "Aprobado";
-        String valorfinal = ev.obtenerResultado(5);
+        String valorfinal = ev.obtenerResultado(5.0 );
         assertEquals(valoresperado,valorfinal);
 
 
@@ -45,7 +45,7 @@ class EvaluacionFinalTest {
         EvaluacionFinal ev = new EvaluacionFinal();
         //voy a porbar suspenso
         String valoresperado = "Notable";
-        String valorfinal = ev.obtenerResultado(7);
+        String valorfinal = ev.obtenerResultado(8.9);
         assertEquals(valoresperado,valorfinal);
 
 
@@ -83,8 +83,8 @@ class EvaluacionFinalTest {
 
           EvaluacionFinal ev = new EvaluacionFinal();
 
-          double valoresperado=3;
-          double notas [] ={1,2,3,4,5};
+          double valoresperado=6.9;
+          double notas [] ={6,7,8};
           double valorfinal=ev.calcularMedia(notas);
           assertEquals(valoresperado,valorfinal);
     }
